@@ -14,7 +14,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from spotipy import oauth2
 import csv 
 
-# The authorization required by the spotify API
+# Authentication/ Authorization 
 cid = ''
 secret = ''
 redirect_uri=""
