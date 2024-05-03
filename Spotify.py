@@ -15,10 +15,10 @@ from spotipy import oauth2
 import csv 
 
 # The authorization required by the spotify API
-cid = '5370c0ca87054f429022354f75b83c9f'
-secret = '8931c1ca07414c1c961cb8660939ac92'
-redirect_uri="http://localhost:3000/analysis"
-username = 'hadasa'
+cid = ''
+secret = ''
+redirect_uri=""
+username = ''
 
 #Authorization and sp to call the APIs
 scope = 'user-top-read playlist-modify-private playlist-modify-public'
