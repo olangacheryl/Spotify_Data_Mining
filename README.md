@@ -1,4 +1,4 @@
 # Spotify_Data_Mining
-Our project's goal is to perform sentiment analysis on the lyrics of the top 20 tracks from a specified Spotify playlist. We utilize the Spotify and Genius APIs to gather the required data. The sentiment analysis is conducted using TextBlob. The script then saves the results to a CSV file and plots the sentiment analysis using seaborn and matplotlib. 
+For our programm to run, search spotify developer on the web and create an account. Afterwards, on your creator dashboard, under settings, Spotify will provide you with the following details that you should paste in the Spotify.py file under the authentication section: cid, secret, redirect_uri, and username. From there, when you run our code, you will be able to get the results that we got.
 
-The ultimate purpose of our project is to provide insight into the emotional content of the most popular songs being listened to in America. This could be useful for various purposes, such as understanding the emotional context of the current music trends or for creating playlists with specific emotional tones.
+disclaimer: the redirect_uri doesn't really work, it is just Spotify's way of authenticating you. Just make sure after you run your code, you are redirected to a seprate page where Spotify asks you to confirm your identity. Also, do not share the secret. 
