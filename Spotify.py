@@ -14,7 +14,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from spotipy import oauth2
 import csv 
 
-# Insert your Spotify username and the credentials that you obtained from spotify developer
+# The authorization required by the spotify API
 cid = '5370c0ca87054f429022354f75b83c9f'
 secret = '8931c1ca07414c1c961cb8660939ac92'
 redirect_uri="http://localhost:3000/analysis"
@@ -23,7 +23,7 @@ username = 'hadasa'
 #Authorization and sp to call the APIs
 scope = 'user-top-read playlist-modify-private playlist-modify-public'
 token = util.prompt_for_user_token(username, scope, client_id=cid, client_secret=secret, redirect_uri=redirect_uri)
-
+#Ensuring Authorization was successful
 if token:
     sp = spotipy.Spotify(auth=token)
 else:
@@ -31,11 +31,11 @@ else:
 
 
 
-playlist_link = "https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF?si=1333723a6eff4b7f&nd=1&dlsi=6ce05bd2564c4195"
+playlist_link = "https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF?si=1333723a6eff4b7f&nd=1&dlsi=6ce05bd2564c4195" #provided by the spotify app
 playlist_URI = playlist_link.split("/")[-1].split("?")[0]
 track_uris = [x["track"]["uri"] for x in sp.playlist_tracks(playlist_URI)["items"]]
 
-for track in sp.playlist_tracks(playlist_URI)["items"]:
+for track in sp.playlist_tracks(playlist_URI)["items"]: #looping through the tracks in the playlist_link
     #URI
     track_uri = track["track"]["uri"]
     
@@ -61,16 +61,8 @@ for track in sp.playlist_tracks(playlist_URI)["items"]:
     data = [track_name, artist_name, artist_pop, artist_genres]
     print(data)
     
-# with open("playlist_song0.csv", mode="w", encoding="utf-8") as file:
-#     reader = csv.reader(file)
-#     data = [track_name, artist_name, artist_pop, artist_genres]
-
-#     writer = csv.writer(file)
-#     writer.writerow(["track", "artist", "pop", "genre"])
-#     writer.writerow(df)
-
-  
-    # writer.writerow([track_name, artist_name, artist_pop ,artist_genres])
+# references: https://github.com/lognorman20/spotify_recommender/blob/main/data_engineering.ipynb
+#references: https://towardsdatascience.com/spotify-sentiment-analysis-8d48b0a492f2
    
 
 
