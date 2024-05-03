@@ -5,7 +5,7 @@ disclaimer: the redirect_uri doesn't really work, it is just Spotify's way of au
 It is also important to note that the top twenty tracks we extracted from this playlist are constantly being updated by Spotify, therefore the following tracks shown on report were taken from the week of May 3 and are subject to change resulting in different data if program is ran at a later time. 
 To run our Python Programs , follow the instructions below to set up your Spotify Developer account and obtain the necessary credentials.
 
-# Here is the Setailed Steps:
+# Here is the Detailed Steps:
 #1. Create a Spotify Developer Account
 Go to the Spotify Developer website and create an account if you don't have one already.
 Once logged in, navigate to your developer dashboard.
