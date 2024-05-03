@@ -11,7 +11,7 @@ Go to the Spotify Developer website and create an account if you don't have one 
 Once logged in, navigate to your developer dashboard.
 
 
-# 2. Obtain Your Spotify API Credentials
+** 2. Obtain Your Spotify API Credentials
 
 In your dashboard, create a new app (if you haven't already).
 Under the app settings, you will find the following details:
@@ -21,7 +21,7 @@ Redirect URI (redirect_uri)
 Copy these credentials.
 
 
-# 3. Update Your Spotify.py File
+** 3. Update Your Spotify.py File
 
 Open the spotify.py file.
 Look for the Authentication/Authorization section in the script.
@@ -30,14 +30,14 @@ python
 Copy code
 
 
-# Your Spotify Credentials
+** Your Spotify Credentials
 
 cid = 'YOUR_CLIENT_ID_HERE'
 secret = 'YOUR_CLIENT_SECRET_HERE'
 redirect_uri = 'YOUR_REDIRECT_URI_HERE'
 username = 'YOUR_USERNAME_HERE'
 
-# 4. Run the Program**s
+** 4. Run the Program**s
 Execute the spotify.py script.
 You may be redirected to a separate page where Spotify asks you to confirm your identity.
 Once you authenticate, the program will proceed with the analysis.
