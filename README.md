@@ -6,11 +6,11 @@ It is also important to note that the top twenty tracks we extracted from this p
 To run our Python Programs , follow the instructions below to set up your Spotify Developer account and obtain the necessary credentials.
 
 Here is the detailed Steps:
-**1. Create a Spotify Developer Account
+#1. Create a Spotify Developer Account
 Go to the Spotify Developer website and create an account if you don't have one already.
 Once logged in, navigate to your developer dashboard.
 \n
-**2. Obtain Your Spotify API Credentials
+#2. Obtain Your Spotify API Credentials
 In your dashboard, create a new app (if you haven't already).
 Under the app settings, you will find the following details:
 Client ID (cid)
@@ -18,7 +18,7 @@ Client Secret (secret)
 Redirect URI (redirect_uri)
 Copy these credentials.
 \n
-**3. Update Your Spotify.py File
+#3. Update Your Spotify.py File
 Open the spotify.py file.
 Look for the Authentication/Authorization section in the script.
 Replace the existing credentials with your own credentials from Step 2:
